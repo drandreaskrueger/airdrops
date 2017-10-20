@@ -1,5 +1,5 @@
 ## BTX balance check
-If you want to check your hundreds of BTC addresses for an inital BTX balance (snapshot April 2017), then this little script helps you a lot: It automates the bitcore.cc query.  
+If you want to check your hundreds of BTC addresses for an inital BTX balance (snapshot April 2017), then this little Python script helps you a lot: It automates the bitcore.cc query.  Published 20/10/2017 in [bitcointalk](https://bitcointalk.org/index.php?topic=1883902.msg23260682#msg23260682).
 
 ### clone repo
 ```
