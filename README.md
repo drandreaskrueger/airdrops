@@ -27,6 +27,13 @@ python3 BTXsnapshotCheck.py --address 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
 python3 BTXsnapshotCheck.py --help
 ```
 
+### output example
+```
+./BTXsnapshotCheck.py 
+13EFsVvaFa61BKUZAd5Me8XZFZNpeV3L5M 0.0
+149YssZJ63isQTG13qrv6TAD9FqMxh8KT2 0.05
+```
+
 ### how to create such an addresses.txt from your wallet?
 e.g. in electrum, open the console, then:
 
