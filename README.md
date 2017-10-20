@@ -1,4 +1,5 @@
 ## BTX balance check
+If you want to check your hundreds of BTC addresses for an inital BTX balance (snapshot April 2017), then this little script helps you a lot: It automates the bitcore.cc query.  
 
 ### clone repo
 ```
@@ -23,7 +24,7 @@ when no parameter given, it falls back to reading in file `addresses.txt` in cur
 ```
 python3 BTXsnapshotCheck.py
 python3 BTXsnapshotCheck.py --file addresses.txt
-python3 BTXsnapshotCheck.py --address 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
+python3 BTXsnapshotCheck.py --address 149YssZJ63isQTG13qrv6TAD9FqMxh8KT2
 python3 BTXsnapshotCheck.py --help
 ```
 
@@ -34,7 +35,7 @@ python3 BTXsnapshotCheck.py --help
 149YssZJ63isQTG13qrv6TAD9FqMxh8KT2 0.05
 ```
 
-### how to create such an addresses.txt from your wallet?
+### how to create such an addresses.txt inputfile from your wallet?
 e.g. in electrum, open the console, then:
 
     print("\n".join(  listaddresses()  ))
