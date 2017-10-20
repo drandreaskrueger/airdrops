@@ -1,16 +1,23 @@
 #!env/py3/bin/python3
 
 '''
-Created on 19 Oct 2017
+              airdrops/BTXsnapshotCheck.py
+              
+@summary:     queries bitcore.cc/check.php for BTX snapshot balance
 
-@author: andreas
+@author:      Andreas Krueger
+@see:         https://github.com/drandreaskrueger/airdrops
+@contact:     https://bitcointalk.org/index.php?action=profile;u=860710
+@license:     MIT license + donationware, see README.md
+@since:       Created on 19 Oct 2017
+@version:     v0.1.0
 '''
 
-from __future__ import print_function
+from __future__ import print_function # so it runs identically in Python 2
 
-import requests # pip install requests
-from lxml import html # pip install lxml
-import click # pip install click
+import requests # pip install requests    # web queries
+from lxml import html # pip install lxml  # parsing html DOM
+import click # pip install click          # command line interface
 
 
 def BTXcheck(address):
@@ -40,6 +47,9 @@ def BTXcheck(address):
     
 
 def iterateAddresses(filename):
+    """
+    for each line in filename call the balance checker
+    """
     with open(filename) as f:
         addresses=f.readlines()
 
@@ -51,13 +61,18 @@ def iterateAddresses(filename):
 @click.command()
 @click.option('--address', '-a', help='Single bitcoin address (then --file is ignored).')
 @click.option('--file', '-f', default="addresses.txt", help='File with addresses, one per line.')
-
 def CLI(file, address):
+    """
+    command line interface
+    """
     if address:
         print (address, BTXcheck(address))
     elif file:
         iterateAddresses(file)
 
+
 if __name__ == '__main__':
     CLI()
+    
+    
     

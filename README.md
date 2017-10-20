@@ -21,14 +21,22 @@ pip install lxml requests click
 ### run
 when no parameter given, it falls back to reading in file `addresses.txt` in current folder.  Try these:
 ```
-python3 BTXbalanceCheck.py
-python3 BTXbalanceCheck.py --file addresses.txt
-python3 BTXbalanceCheck.py --address 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
-python3 BTXbalanceCheck.py --help
+python3 BTXsnapshotCheck.py
+python3 BTXsnapshotCheck.py --file addresses.txt
+python3 BTXsnapshotCheck.py --address 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
+python3 BTXsnapshotCheck.py --help
 ```
+
+### how to create such an addresses.txt from your wallet?
+e.g. in electrum, open the console, then:
+
+    print("\n".join(  listaddresses()  ))
+
 
 ## donationware
 ```
-BTC  13EFsVvaFa61BKUZAd5Me8XZFZNpeV3L5M
-BTX  
+BTC  13EFsVvaFa61BKUZAd5Me8XZFZNpeV3L5M 
+BTX  1JBFG6W71NzKZgDmqM7kcHUjqghcRxjQ5n
 ```
+
+Thank you.
