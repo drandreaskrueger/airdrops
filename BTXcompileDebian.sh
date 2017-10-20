@@ -1,4 +1,16 @@
 # how (and why) to compile `bitcore-qt` on Debian stretch
+#
+# @author:      Andreas Krueger
+# @see:         https://github.com/drandreaskrueger/airdrops
+# @contact:     https://bitcointalk.org/index.php?action=profile;u=860710
+# @since:       Created on 19 Oct 2017
+# @version:     v0.1.0
+#
+# @license:     MIT license + donationware:
+# BTC  13EFsVvaFa61BKUZAd5Me8XZFZNpeV3L5M 
+# BTX  1JBFG6W71NzKZgDmqM7kcHUjqghcRxjQ5n
+# Thank you.
+'''
 
 # folder & download & unpack
 mkdir BitCore; cd BitCore
